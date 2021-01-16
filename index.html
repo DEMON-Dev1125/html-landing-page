@@ -345,9 +345,9 @@
       background-color: #1d2733;
       text-align: center;
       padding: 8px;
-      border-radius: 8px;
       color: #FFF;
       margin-top: 15px;
+      border-radius: 50px;
     }
 
     .center {
@@ -397,26 +397,58 @@
         margin: 10px 5px 0 5px;
       }
     }
+
+    .skin-care, .slider, .about-us {
+      background: linear-gradient(to bottom right, #85a8d5 0%, #e7e797 100%) !important;
+    }
+
+    .btn__size {
+      width: 100% !important;
+      padding: 15px 0;
+    }
+    .btn__start {
+      color: #007bff !important
+    }
+
+    .btn__get {
+      color: #fff !important;
+      width: 200px;
+    }
+    .img__size {
+      width: 24px;
+      height: 24px;
+    }
+    .img__size img {
+      height: 24px;
+      width: 24px;
+    }
+
+    .nav__bottom {
+      justify-content: center;
+    }
+    .nav__mobile {
+      min-width: 500px;
+    }
+
+    .features {
+      background-color: #f9ea8f;
+      background: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+    }
+
+    .icon__size {
+      width: 48px;
+      height: 48px;
+    }
+
   </style>
 
   <body>
-    <!-- <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#">Brand</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a href="pricing.html">Pricing</a>
-            <div class="collapse navbar-collapse" id="navcol-1"><a href="features.html"></a>
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="about-us.html">Our Areas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-
     <div class="header">
       <div class="promobar">
         <p>
           Get $15 off your first order of ED treatment:
           <a href="https://start.ro.co/roman/ed"
-            ><b style="color: #007bff !important">Start now</b></a
+            ><b class="btn__start">Start now</b></a
           >
         </p>
       </div>
@@ -578,8 +610,7 @@
 
                         <a
                           href="#ro-modal-3886"
-                          class="btn__style"
-                          style="color: #fff !important; width: 200px"
+                          class="btn__style btn__get"
                         >
                           Get started
                         </a>
@@ -627,25 +658,6 @@
     </div>
 
     <main class="page landing-page">
-      <!-- <section
-        class="bg-white clean-block clean-hero"
-        style="
-          background-image: url('assets/img/tech/image4.jpg');
-          color: rgba(9, 162, 255, 0.85);
-        "
-      >
-        <div class="text">
-          <h2 class="display-4">You are in Good Hands</h2>
-          <p>
-            Bringing you the best in skin and hair care to wherever you are.
-            With personalized care plans and video consults by our experts,
-            health is on your way!
-          </p>
-          <button class="btn btn-outline-light btn-lg" type="button">
-            Learn More
-          </button>
-        </div>
-      </section> -->
       
     <div class="backsection">
       <div class="container contentbox">
@@ -672,30 +684,30 @@
                       </div>
                       <div class="row">
                           <div class="col-4 small-adv-section">
-                              <div class="al-center" style="width: 24px; height: 24px">
+                              <div class="al-center img__size" >
                                   <img alt=""
                                       src="https://www.getroman.com/wp-content/uploads/2019/08/shield@2x-1.png"
-                                      style="width: 24px; height: 24px" loading="eager" />
+                                       loading="eager" />
                               </div>
                               <p>
                                   The best healthcare professionals
                               </p>
                           </div>
                           <div class="col-4 small-adv-section">
-                              <div class="al-center" style="width: 24px; height: 24px">
+                              <div class="al-center img__size" >
                                   <img alt=""
                                       src="https://www.getroman.com/wp-content/uploads/2019/08/settings@2x.png"
-                                      style="width: 24px; height: 24px" loading="eager" />
+                                       loading="eager" />
                               </div>
                               <p>
                                   Personalized treatment
                               </p>
                           </div>
                           <div class="col-4 small-adv-section">
-                              <div class="al-center" style="width: 24px; height: 24px">
+                              <div class="al-center img__size" >
                                   <img alt=""
                                       src="https://www.getroman.com/wp-content/uploads/2019/08/medication-certified@2x-1.png"
-                                      style="width: 24px; height: 24px" loading="eager" />
+                                       loading="eager" />
                               </div>
                               <p>
                                   Licensed pharmacy
@@ -704,8 +716,8 @@
                       </div>
                   </div>
               </div>
-              <div class="row" style="justify-content: center;">
-                  <div class="col-md-7" style="min-width: 500px;">
+              <div class="row nav__bottom">
+                  <div class="col-md-7 nav__mobile" >
                       <div class="row">
                           <div class="col-6 advitem">
                               <a class="skincare" href="https://www.getroman.com/ed/">
@@ -783,11 +795,11 @@
           </div>
           <br />
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 text-center">
               <h3>Ready for Amazing Skin?</h3>
             </div>
-            <div class="col-md-6">
-              <button class="btn btn-primary btn-lg btn-visit" type="button">
+            <div class="col-md-12">
+              <button class="btn btn__size btn-primary btn-lg btn-visit" type="button">
                 Start online visit
               </button>
             </div>
@@ -850,11 +862,11 @@
           </div>
           <br />
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12  text-center">
               <h3>Ready for Amazing Skin?</h3>
             </div>
-            <div class="col-md-6">
-              <button class="btn btn-primary btn-lg btn-visit" type="button">
+            <div class="col-md-12">
+              <button class="btn  btn__size btn-primary btn-lg btn-visit" type="button">
                 Start online visit
               </button>
             </div>
@@ -864,10 +876,6 @@
 
       <section
         class="clean-block features"
-        style="
-          background-color: #f9ea8f;
-          background: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
-        "
       >
         <div class="container">
           <div class="block-heading">
@@ -884,7 +892,7 @@
                 <div class="dot-style"></div>
               </div>
               <div class="feature-box">
-                <i class="icon-star icon" style="margin: 40px 0 0 25px;"></i>
+                <i class="icon-star icon  mt-5 ml-3"></i>
                 <h4>Bootstrap 4</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -906,7 +914,7 @@
                 <div class="dot-style"></div>
               </div>
               <div class="feature-box">
-                <i class="icon-pencil icon" style="margin: 40px 0 0 25px;"></i>
+                <i class="icon-pencil icon  mt-5 ml-3"></i>
                 <h4>Customizable</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -921,7 +929,7 @@
                 <div style="width: 50% !important"></div>
               </div>
               <div class="feature-box">
-                <i class="icon-pencil icon" style="margin: 40px 0 0 25px;"></i>
+                <i class="icon-pencil icon mt-5 ml-3"></i>
                 <h4>Customizable</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -932,18 +940,18 @@
           </div>
         </div>
         <div class="container"><div class="row">
-          <div class="col-sm-12 col-lg-6" style="margin-top: 35px">
+          <div class="col-sm-12 col-lg-6 mt-3">
             <a
-              class="btn__style btn__color mt-5"
+              class="btn__style btn__color mt-3"
               href="#"
               data-toggle="modal"
               data-target="ro-modal-3886"
               >Get Products</a
             >
           </div>
-          <div class="col-sm-12 col-lg-6" style="margin-top: 35px">
+          <div class="col-sm-12 col-lg-6 mt-3">
             <a
-              class="btn__style btn__color mt-5"
+              class="btn__style btn__color mt-3"
               href="#"
               data-toggle="modal"
               data-target="ro-modal-3886"
@@ -1031,86 +1039,85 @@
               <li data-target="#carousel-1" data-slide-to="4"></li>
             </ol>
           </div>
-          <div class="row">
-            <div class="col-lg-7 col-md-12 col-sm-12" style="margin-top: 50px">
-              <h2 style="marign: 40px 0 8px 0 !important">
-                Ready to start your online visit?
-              </h2>
-  
-              <p style="margin: 16px 0">
-                If something is bothering you, we want to help. Complete an online
-                visit to get started.
-              </p>
-  
-              <div class="col-sm-12 col-lg-6" style="margin: 0; padding: 0">
-                <a
-                  class="btn__style btn__color mt-5"
-                  href="#"
-                  data-toggle="modal"
-                  data-target="ro-modal-3886"
-                  >Start online visit</a
-                >
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-12 col-sm-12">
-              <div class="row" style="margin-top: 35px">
-                <div class="col-md-6 col-sm-12">
-                  <div class="card-content">
-                    <div class="center">
-                      <img
-                        alt=""
-                        src="https://www.getroman.com/wp-content/uploads/2019/08/lightning@2x.png"
-                        style="width: 48px; height: 48px"
-                        loading="lazy"
-                      />
-                    </div>
-                    <p class="text-center">Free 2-day shipping</p>
+            <div class="row mt-5">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row">
+                  <div class="col-sm-12  col-md-7 col-lg-7 m-0 p-0">
+                    <h2 class="mt-3 mb-2">
+                      Ready to start your online visit?
+                    </h2>
+        
+                    <p class="mt-3 mb-3">
+                      If something is bothering you, we want to help. Complete an online
+                      visit to get started.
+                    </p>
                   </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <div class="card-content">
-                    <div class="center">
-                      <img
-                        alt=""
-                        src="https://www.getroman.com/wp-content/uploads/2019/08/mobile@2x.png"
-                        style="width: 48px; height: 48px"
-                        loading="lazy"
-                      />
-                    </div>
-                    <p class="text-center">Transparency</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row" style="margin-top: 35px">
-                <div class="col-md-6 col-sm-12">
-                  <div class="card-content">
-                    <div class="center">
-                      <img
-                        alt=""
-                        src="https://www.getroman.com/wp-content/uploads/2019/08/break-up@2x.png"
-                        style="width: 48px; height: 48px"
-                        loading="lazy"
-                      />
-                    </div>
-                    <p class="text-center">Cancel anytime</p>
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <div class="card-content">
-                    <div class="center">
-                      <img
-                        alt=""
-                        src="https://www.getroman.com/wp-content/uploads/2019/08/shield@2x-1.png"
-                        style="width: 48px; height: 48px"
-                        loading="lazy"
-                      />
-                    </div>
-                    <p class="text-center">Free follow-ups</p>
+    
+                  <div class="col-sm-12 col-md-5 col-lg-5 m-0 p-3">
+                    <a
+                      class="btn__style btn__color pt-4 pb-4"
+                      href="#"
+                      data-toggle="modal"
+                      data-target="ro-modal-3886"
+                      >Start online visit</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="row mt-5">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card-content">
+                  <div class="center">
+                    <img
+                      alt=""
+                      class="icon__size"
+                      src="https://www.getroman.com/wp-content/uploads/2019/08/lightning@2x.png"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="text-center">Free 2-day shipping</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card-content">
+                  <div class="center">
+                    <img
+                      alt=""
+                      class="icon__size"
+                      src="https://www.getroman.com/wp-content/uploads/2019/08/mobile@2x.png"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="text-center">Transparency</p>
+                </div>
+              </div><div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card-content">
+                  <div class="center">
+                    <img
+                      alt=""
+                      class="icon__size"
+                      src="https://www.getroman.com/wp-content/uploads/2019/08/break-up@2x.png"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="text-center">Cancel anytime</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card-content">
+                  <div class="center">
+                    <img
+                      alt=""
+                      class="icon__size"
+                      src="https://www.getroman.com/wp-content/uploads/2019/08/shield@2x-1.png"
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="text-center">Free follow-ups</p>
+                </div>
+              </div>
+            </div>
         </div>
       </section>
       <section class="clean-block about-us">
